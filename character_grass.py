@@ -9,7 +9,7 @@ character = load_image('character.png')
 def draw_character(x, y):
     clear_canvas_now()
     character.draw_now(x, y)
-    delay(0.01)
+    delay(0.1)
 
 def run_circle():
     r, cx, cy = 250, 800 // 2, 600 // 2
@@ -44,9 +44,9 @@ def run_rectangle():
     run_left()
 
 def run_r1():
-    print('r1')
-    pass
-
+    for x in range(50, 400, 10):
+        draw_character(x, x * math.sqrt(2))
+            
 def run_r2():
     print('r2')
     pass
