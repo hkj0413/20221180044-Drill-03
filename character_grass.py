@@ -6,8 +6,12 @@ open_canvas()
 grass = load_image('grass.png')
 character = load_image('character.png')
 
-def run_circle():
+def draw_character(x, y):
+    clear_canvas_now()
+    character.draw_now(x, y)
+    delay(0.01)
 
+def run_circle():
     r, cx, cy = 300, 800 // 2, 600 // 2
 
     for degree in range(0, 360, 3):
@@ -15,12 +19,14 @@ def run_circle():
         x = r * math.cos(theta) + cx
         y = r * math.sin(theta) + cy
 
-        clear_canvas_now()
-        character.draw_now(x, y)
-        delay(0.01)
-
+        draw_character(x, y)
+        
 def run_top():
     print('Top')
+
+    for x in range(0, 800, 10):
+        draw_character(x, 550)
+    
     pass
 
 def run_right():
