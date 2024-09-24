@@ -17,16 +17,36 @@ def run_circle():
 
         clear_canvas_now()
         character.draw_now(x, y)
-        delay(0.1)
-   
+        delay(0.01)
 
-def run_rectangle():
-
-    
+def run_top():
+    print('Top')
     pass
 
+def run_right():
+    print('Right')
+    pass
+
+def run_bottom():
+    print('bottom')
+    pass
+
+def run_left():
+    print('Left')
+    pass
+   
+def run_rectangle():
+    
+    run_top()
+    run_right()
+    run_bottom()
+    run_left()
+
 while True:
-    run_circle()
+    #run_circle()
     run_rectangle()
+    break;
+
+close_canvas()
 
     
