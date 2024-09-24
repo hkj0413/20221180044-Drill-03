@@ -22,16 +22,12 @@ def run_circle():
         draw_character(x, y)
         
 def run_top():
-    print('Top')
-
     for x in range(0, 800, 10):
         draw_character(x, 550)
-    
-    pass
 
 def run_right():
-    print('Right')
-    pass
+    for y in range(550, 50, -10):
+        draw_character(790, y)
 
 def run_bottom():
     print('bottom')
@@ -42,8 +38,7 @@ def run_left():
     pass
    
 def run_rectangle():
-    
-    run_top()
+    #run_top()
     run_right()
     run_bottom()
     run_left()
