@@ -44,12 +44,12 @@ def run_rectangle():
     run_left()
 
 def run_r1():
-    for x in range(50, 400, 10):
+    for x in range(20, 400, 10):
         draw_character(x, x * math.sqrt(2))
             
 def run_r2():
-    print('r2')
-    pass
+    for x in range(400, 780, 10):
+        draw_character(x, 400 * math.sqrt(2) - (x - 400) * math.sqrt(2))
 
 def run_r3():
     print('r3')
