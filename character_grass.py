@@ -43,10 +43,28 @@ def run_rectangle():
     run_bottom()
     run_left()
 
-while True:
-    run_circle()
-    run_rectangle()
+def run_r1():
+    print('r1')
+    pass
 
+def run_r2():
+    print('r2')
+    pass
+
+def run_r3():
+    print('r3')
+    pass
+
+def run_triangle():
+    run_r1()
+    run_r2()
+    run_r3()
+
+while True:
+    #run_circle()
+    #run_rectangle()
+    run_triangle()
+    break
 close_canvas()
 
     
